@@ -1,0 +1,194 @@
+*{padding: 0; margin:0; box-sizing: border-box;}
+body{
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 75px;
+    position: absolute;
+    top: 0px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 16px;
+    margin: 0px 4px;
+}
+.menu a:last-child{
+    background: #e74c3c;
+    border-radius: 5px;
+}
+.menu a:hover{
+    background: #008000;
+    border-radius: 5px;
+    transition: 0s linear;
+}
+.line{
+    position: absolute;
+    top: 18%;
+    left: 8%;
+}
+.box1{
+    width: 20px;
+    height: 20px;
+    background: white;
+}
+.box2{
+    width: 370px;
+    height: 2px;
+    background: white;
+}
+.box3{
+    width: 570px;
+    height: 2px;
+    background: white;
+    bottom: 5px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 122px;
+}
+.left{
+    flex-basis: 40%;
+}
+.right{
+    flex-basis: 50%;
+}
+.right img{
+    width: 160%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+}
+.left h1{
+    font-size:4.5rem ;
+    line-height: 4.5rem;
+}
+.left button{
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.section1 , .section2 , .section3 , .section4{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+}
+body {
+    background:#000000;
+    font-family:"Raleway";
+  }
+  
+
+
+
+
+
+
+
+  .form {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:300px;
+    height:250px;
+    padding:10px;
+  }
+  .form .form-header {
+    height:30px;
+    display:flex;
+    align-items:center;
+    text-align:center;
+  }
+  .form .form-header > div {
+    width:calc(100% / 3);
+    color:#ddd;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+  }
+  .form.signup .form-header div.show-signup {
+    color:#f1575b;
+  }
+  .form.signin .form-header div.show-signin {
+    color:#f1575b;
+  }
+  .form.reset .form-header div.show-reset {
+    color:#f1575b;
+  }
+  .form .form-elements {
+    margin-top:15px;
+  }
+  .form .form-elements .form-element {
+    height:50px;
+    opacity:1;
+    overflow:hidden;
+    transition:all 500ms ease-in-out;
+  }
+  .form .form-elements input {
+    width:100%;
+    padding:10px;
+    font-size:16px;
+    margin:5px 0px;
+    border-radius:10px;
+    box-sizing:border-box;
+    border:1px solid #222;
+    background:#f5f5f5;
+  }
+  .form .form-elements button {
+    width:100%;
+    padding:10px;
+    font-size:16px;
+    font-weight:600;
+    margin-top:5px;
+    border-radius:10px;
+    background:#f1575b;
+    color:#f5f5f5;
+    cursor:pointer;
+    border:none;
+    outline:none;
+  }
+  .form .arrow {
+    position:absolute;
+    top:51px;
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #f5f5f5;
+  }
+  .form.signup .arrow {
+    left:calc(calc(100% / 3) / 2);
+  }
+  .form.signin .arrow {
+    left:calc(calc(100% / 3) + calc(calc(100% / 3) / 2.2)) ;
+  }
+  .form.reset .arrow {
+    left:calc(calc(calc(100% / 3) * 2) + calc(calc(100% / 3) / 3)) ;
+  }
+  
+  .form.signin .form-elements > div:nth-child(3) {
+    height:0px;
+    opacity:0;
+  }
+  .form.reset .form-elements > div:nth-child(2),
+  .form.reset .form-elements > div:nth-child(3) {
+    height:0px;
+    opacity:0;
+  }
